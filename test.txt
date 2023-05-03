@@ -1,0 +1,5 @@
+PizzaTopping AND
+CheeseTopping THAT
+hasSpiciness SOME Mild
+AND isTesteOf VALUE Italy
+AND integer[>="400"]
