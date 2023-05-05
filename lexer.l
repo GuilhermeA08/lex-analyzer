@@ -12,8 +12,9 @@ letra	[A-Za-z]
 digito	[0-9]   
 num	    {digito}+(\.{digito}+)?(E[+-]?{digito}+)?
 comp    <|>|<>|=
+prts    \(|\)
 pprt    has[A-Z]{letra}*|is[A-Z]{letra}*Of
-card    {num}|integer\[{comp}+"{num}"\]
+card    {num}|integer\[{comp}+\"{num}\"\]
 class   [A-Z]{letra}*
 
 %%
@@ -23,6 +24,7 @@ ALL		    return ALL;
 VALUE		return VALUE;
 AND		    return AND;
 THAT		return THAT;
+{prts}      return PARENTHESIS;
 {card}      return CARDINAL;
 {pprt}      return PROPERTY;
 {class}     return CLASS;

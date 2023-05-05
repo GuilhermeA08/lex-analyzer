@@ -16,6 +16,7 @@ void Parser::Start()
             case VALUE: cout << "VALUE\n"; break;
             case AND: cout << "AND\n"; break;
             case THAT: cout << "THAT\n"; break;
+            case PARENTHESIS: cout << "PARENTHESIS\n"; break;
             case CARDINAL: cout << "CARDINAL: " << scanner.YYText() << "\n";; break;
             case PROPERTY: cout << "PROPERTY: " << scanner.YYText() << "\n";; break;
             case CLASS: cout << "CLASS: " << scanner.YYText() << "\n"; break;
