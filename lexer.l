@@ -22,8 +22,13 @@ class   [A-Z]{letra}*
 SOME		return  SOME; 
 ALL		    return ALL;
 VALUE		return VALUE;
-AND		    return AND;
+MIN		    return MIN;
+MAX		    return MAX;
+EXACTLY		return EXACTLY;
 THAT		return THAT;
+NOT		    return NOT;
+AND		    return AND;
+OR		    return OR;
 {prts}      return PARENTHESIS;
 {card}      return CARDINAL;
 {pprt}      return PROPERTY;
