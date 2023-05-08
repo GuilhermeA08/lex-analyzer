@@ -8,7 +8,7 @@ using std::cout;
 %option noyywrap
 delim	[ \t\n]
 brancos {delim}+
-letra	[A-Za-z]
+letra	[A-Za-z_]
 digito	[0-9]   
 num	    {digito}+(\.{digito}+)?(E[+-]?{digito}+)?
 comp    <|>|<>|=
@@ -26,6 +26,7 @@ MIN		    return MIN;
 MAX		    return MAX;
 EXACTLY		return EXACTLY;
 THAT		return THAT;
+ONLY        return ONLY;
 NOT		    return NOT;
 AND		    return AND;
 OR		    return OR;
@@ -33,7 +34,6 @@ OR		    return OR;
 {card}      return CARDINAL;
 {pprt}      return PROPERTY;
 {class}     return CLASS;
-{num}	    return NUM;
 .           cout << YYText() << " é um token inválido!\n"; 
 %%
 

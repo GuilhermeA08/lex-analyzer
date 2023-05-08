@@ -1,5 +1,5 @@
-PizzaTopping AND
+Pizza_Topping AND
 CheeseTopping THAT
 hasSpiciness SOME (Mild
 AND isTesteOf VALUE Italy
-AND 3)
+AND hasTopping MIN 3)
