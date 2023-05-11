@@ -2,24 +2,26 @@
 
 Analisador léxico para substrato da linguagem OWL2 (Formato Manchester Syntax).
 
-Antes de executar, tenha certeza de ter instalado todas as dependências necessárias.
+Caso esteja utilizando o Windows, considere usar o WSL para executar o código.
 
-- g++
-- Make
-- CMake
-- Flex
+Se necessário, siga este tutorial: <https://learn.microsoft.com/pt-br/windows/wsl/install>
 
-O código foi testado e executado no sistema operacional Linux, caso possível, ao tentar executar o projeto, estar também utilizando o mesmo sistema operacional.
+Instale a distribuição Ubuntu.
 
-Foi utilizado também o ambiente Visual Studio Code, se possível utiliza-lo também para que possíveis dúvidas possam ser sanadas caso venham a surgir.
+Agora siga os passos a seguir para poder executar o código.
 
-Para executar o código, na parte superior da tela, seguir a sequência:
+- sudo apt install g++
+- sudo apt install make
+- sudo apt install cmake
 
-Terminal > Run Task/Executar Tarefa > cmake.
-Terminal > Run Task/Executar Tarefa > make.
+Agora, precisamos clonar o repositório do código usando o seguinte comando.
 
-Primeiro execute a tarefa cmake, e após concluir com sucesso, executar a tarefa make.
+- git clone https://github.com/GuilhermeA08/lex-analyzer.git
 
-Em seguida, ele irá gerar um executável dentro da pasta Build, com o nome **"sample"**.
+Após isso, execute os seguinte comandos.
 
-Para executar, você pode colocar o código **./sample < ../test.txt**, dentro do arquivo test.txt será o código a ser analisado, caso queira testar algum diferente, basta modificá-lo, e executar o comando novamente.
+- cd lex-analyzer/Build/
+- chmod +x sample
+- ./sample < ../test.txt
+
+O código foi testado e executado no sistema operacional Linux.
