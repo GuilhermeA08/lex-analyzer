@@ -10,9 +10,11 @@ Instale a distribuição Ubuntu.
 
 Agora siga os passos a seguir para poder executar o código.
 
-- sudo apt install g++
-- sudo apt install make
-- sudo apt install cmake
+- sudo hwclock --hctosys
+- sudo apt update -y
+- sudo apt install -y g++
+- sudo apt install -y make
+- sudo apt install -y cmake
 
 Agora, precisamos clonar o repositório do código usando o seguinte comando.
 
