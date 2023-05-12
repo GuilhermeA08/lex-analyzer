@@ -14,7 +14,7 @@ num	    {digito}+(\.{digito}+)?(E[+-]?{digito}+)?
 comp    <|>|<>|=
 prts    \(|\)
 pprt    has[A-Z]{letra}*|is[A-Z]{letra}*Of
-card    {num}|integer\[{comp}+\"{num}\"\]
+card    {num}|integer\[{comp}+{num}\]
 class   [A-Z]{letra}*
 
 %%
